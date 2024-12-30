@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:antiquewhite;
+    background-image: url(https://t4.ftcdn.net/jpg/08/58/69/13/360_F_858691375_iASliDBLyB3vOVNH2iIHaabhIkNxKGZD.jpg);
+    
+}
+.carousel-cover{
+    width: 55%;
+    justify-self: center;
+    margin-top: 58px;
+}
+#favorite-movies{
+    color: antiquewhite;
+  }
+#app {
+    padding: 20px;
+    margin-top: 18vh;
+    opacity: 0; /* Initially hide the content */
+    transition: opacity 2s ease-in; /* Smooth transition effect over 2 seconds */
+  }
+  
+  #app.show {
+    opacity: 1; /* Make the content visible */
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  #search-results{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .movie {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    padding: 12px;
+  }
+  .movie:hover{
+    scale: 1.05;
+  }
+
+  .movie img {
+    width: 100px;
+    height: auto;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .Header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    min-height: 18vh;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 18px;
+    box-sizing: border-box;
+    background-color: black;
+  }
+  .body :nth-child(2){
+      margin-top: 18vh;
+  }
+  #link {
+    text-decoration: none;
+    color: aquamarine;
+  }
+  #movie-details{
+    margin-top: 21vh;
+    justify-self: center;
+    text-align: center;
+  }
+  #favoriteMoviesCarousel .carousel-inner {
+    height: 400px; /* Adjust to desired height */
+}
+#favoriteMoviesCarousel .carousel-item {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    height: 100%; /* Ensure the carousel item takes full height */
+}
+#favoriteMoviesCarousel .carousel-item img {
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    width: 100%; /* Make sure images take full width */
+    height: 100%; /* Set a consistent height */
+    max-height: 400px; /* Set a fixed height for images */
+}
+#favoriteMoviesCarousel {
+    max-width: 800px;
+    margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+}
+
+.carousel-control-next{
+    margin-left: 100px;
+    margin-right: -90px;
+}
+.carousel-control-prev{
+    margin-left: -90px;
+}
+#favorite-movies{
+    text-align: center;
+}

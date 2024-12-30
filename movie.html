@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="Header">
+        <a id="link" href="index.html"> Home</a>
+            <a id="link" href="movie.html"> Movie </a>
+            <a id="link" href="favorites.html">Favorite</a>
+    </div>
+    <div id="movie-details">
+        <h1 id="movie-title"></h1>
+        <img id="movie-poster" alt="Movie Poster" />
+        <p id="movie-plot"></p>
+        <p id="movie-year"></p>
+        <button onclick="addToFavoritesFromDetails()">Add to Favorites</button>
+    </div>
+<!-- </div> -->
+    <script src="js/movie.js"></script>
+</body>
+</html>
