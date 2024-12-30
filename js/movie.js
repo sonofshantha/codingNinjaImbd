@@ -1,12 +1,11 @@
 const apiKey = '53f11466'; // Replace with your OMDb API key
-
 // Get the movie ID from the URL
 const urlParams = new URLSearchParams(window.location.search);
 const movieId = urlParams.get('id');
 const favFlag = urlParams.get('favFlag');
 console.log(favFlag);
 // Fetch movie details from the API
-fetch(`http://www.omdbapi.com/?i=${movieId}&apikey=${apiKey}`)
+fetch(`https://www.omdbapi.com/?i=${movieId}&apikey=${apiKey}`)
   .then(response => response.json())
   .then(data => {
     console.log(data)

@@ -5,7 +5,7 @@ function searchMovies() {
   const query = document.getElementById('search-input').value;
 
   if (query.length > 2) {
-    fetch(`http://www.omdbapi.com/?s=${query}&apikey=${apiKey}`)
+    fetch(`https://www.omdbapi.com/?s=${query}&apikey=${apiKey}`)
       .then(response => response.json())
       .then(data => {
         // console.log(data)
